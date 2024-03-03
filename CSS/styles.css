@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.intrebare {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.raspuns {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#da {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  color: white;
+}
+
+#nu {
+  background-color: #ccc;
+}
+
+#rezultat {
+  display: none;
+  margin-top: 50px;
+}
+
+.rezultat-text {
+  font-size: 24px;
+}
+
+/* Media query pentru dispozitive mai mici */
+@media screen and (max-width: 600px) {
+  .intrebare {
+    font-size: 24px; /* Reducem mărimea fontului pentru întrebare pe ecrane mici */
+  }
+
+  .raspuns {
+    width: 150px; /* Reducem lățimea butoanelor pe ecrane mici */
+    height: 40px; /* Reducem înălțimea butoanelor pe ecrane mici */
+    font-size: 14px; /* Reducem mărimea fontului pentru butoane pe ecrane mici */
+  }
+
+  #rezultat {
+    margin-top: 30px; /* Reducem spațiul între rezultat și întrebare pe ecrane mici */
+  }
+
+  .rezultat-text {
+    font-size: 18px; /* Reducem mărimea fontului pentru textul rezultatului pe ecrane mici */
+  }
+}
